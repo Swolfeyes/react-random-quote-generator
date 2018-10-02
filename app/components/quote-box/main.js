@@ -27,20 +27,22 @@ const QuoteBox = ({ text, author, onClick, icon }) => {
           <Button onClick={onClick} />
         </div>
         <div className={styles['quote-box__footer__item']}>
-          <PostLink
-            text={text}
-            author={author}
-            link={`https://twitter.com/intent/tweet?hashtags=quotes&text=${encodeURIComponent(text + " - " + author)}`}
-            icon={['fab', 'twitter-square']}
-          />
-        </div>
-        <div className={styles['quote-box__footer__item']}>
-          <PostLink
-            text={text}
-            author={author}
-            link={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://swolfeyes.github.io/react-random-quote-generator/')}`}
-            icon={['fab', 'facebook-square']}
-          />
+          <div className={styles['quote-box__footer__item__social']}>
+            <PostLink
+              text={text}
+              author={author}
+              link={`https://twitter.com/intent/tweet?hashtags=quotes&text=${encodeURIComponent(text + " - " + author)}`}
+              icon={['fab', 'twitter-square']}
+            />
+          </div>
+          <div className={styles['quote-box__footer__item__social']}>
+            <PostLink
+              text={text}
+              author={author}
+              link={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://swolfeyes.github.io/react-random-quote-generator/')}&quote=${encodeURIComponent(text)}`}
+              icon={['fab', 'facebook-square']}
+            />
+          </div>
         </div>
       </div>
     </div>
