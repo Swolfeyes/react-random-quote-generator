@@ -38,7 +38,7 @@ const QuoteBox = ({ text, author, onClick, icon }) => {
           <PostLink
             text={text}
             author={author}
-            link={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://swolfeyes.github.io/myPortfolio/')}`}
+            link={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://swolfeyes.github.io/react-random-quote-generator/')}`}
             icon={['fab', 'facebook-square']}
           />
         </div>
