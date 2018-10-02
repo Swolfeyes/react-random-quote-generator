@@ -38,8 +38,8 @@ const QuoteBox = ({ text, author, onClick, icon }) => {
           <PostLink
             text={text}
             author={author}
-            link={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://swolfeyes.github.io/react-random-quote-generator/')}`}
-            icon={['fab', 'facebook-square']}
+            link={`https://twitter.com/intent/tweet?hashtags=quotes&text=${encodeURIComponent('https://swolfeyes.github.io/react-random-quote-generator/')}`}
+            icon={['fab', 'twitter-square']}
           />
         </div>
       </div>
