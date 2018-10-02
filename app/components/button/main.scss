@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+.button {
+  padding: 10px;
+  font-family: "Questrial", sans-serif;
+  border-radius: 4px;
+  border: 1px solid #ff416c;
+  background-color: transparent;
+  box-shadow: 0.5px 0.5px 2px;
+  color: #ff416c;
+  cursor: pointer;
+
+  &:focus, &:hover, &:active {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #ff416c;
+    color: #fff;
+    box-shadow: none;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}

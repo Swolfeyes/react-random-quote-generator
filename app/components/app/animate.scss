@@ -1,0 +1,32 @@
+
+:global {
+  .fade {
+
+    &-appear {
+      opacity: 0;
+
+      &-active {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+      }
+    }
+
+    &-enter {
+      opacity: 0;
+
+      &-active {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+      }
+    }
+
+    &-leave {
+      opacity: 1;
+
+      &-active {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+      }
+    }
+  }
+}
