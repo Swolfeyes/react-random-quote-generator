@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
 body {
   background: linear-gradient(to right, #ff416c, #ff4b2b);
@@ -22,7 +23,8 @@ body {
     &__pending, &__error {
 
       span {
-        font-size: 30px;
+        font-size: 40px;
+        font-family: "Great Vibes", cursive;
       }
     }
   }
